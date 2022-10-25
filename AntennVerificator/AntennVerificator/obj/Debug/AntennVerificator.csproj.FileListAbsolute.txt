@@ -1,0 +1,11 @@
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.AssemblyReference.cache
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.SuggestedBindingRedirects.cache
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Properties.Resources.resources
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.GenerateResource.cache
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.CoreCompileInputs.cache
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\AntennVerificator.exe.config
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\AntennVerificator.exe
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\AntennVerificator.pdb
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.exe
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.pdb
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Form1.resources
