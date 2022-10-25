@@ -17,6 +17,8 @@ namespace AntennVerificator
         public Form1()
         {
             InitializeComponent();
+
+            Animator.Start();
         }
 
         private static double Erf(double x)

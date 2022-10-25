@@ -29,44 +29,44 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.myCard1 = new AntennVerificator.MyCard();
             this.myButton1 = new AntennVerificator.MyButton();
+            this.myCard1 = new AntennVerificator.MyCard();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(246, 59);
+            this.textBox1.Location = new System.Drawing.Point(681, 96);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
             // 
+            // myButton1
+            // 
+            this.myButton1.BackColor = System.Drawing.Color.Black;
+            this.myButton1.ForeColor = System.Drawing.Color.White;
+            this.myButton1.Location = new System.Drawing.Point(628, 122);
+            this.myButton1.Name = "myButton1";
+            this.myButton1.Size = new System.Drawing.Size(199, 102);
+            this.myButton1.TabIndex = 0;
+            this.myButton1.Text = "myButton1";
+            this.myButton1.Click += new System.EventHandler(this.myButton1_Click);
+            // 
             // myCard1
             // 
             this.myCard1.BackColor = System.Drawing.Color.White;
-            this.myCard1.backColorCurtain = System.Drawing.Color.Tomato;
+            this.myCard1.backColorCurtain = System.Drawing.Color.Blue;
             this.myCard1.Font = new System.Drawing.Font("Verdana", 9F);
             this.myCard1.fontDescription = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold);
             this.myCard1.fontHeader = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.myCard1.foreColorDescription = System.Drawing.Color.Black;
             this.myCard1.foreColorHeader = System.Drawing.Color.White;
-            this.myCard1.Location = new System.Drawing.Point(489, 179);
+            this.myCard1.Location = new System.Drawing.Point(177, 189);
             this.myCard1.Name = "myCard1";
             this.myCard1.Size = new System.Drawing.Size(250, 200);
             this.myCard1.TabIndex = 2;
             this.myCard1.Text = "myCard1";
             this.myCard1.textDescription = "Your description";
             this.myCard1.textHeader = "Header";
-            // 
-            // myButton1
-            // 
-            this.myButton1.BackColor = System.Drawing.Color.Black;
-            this.myButton1.ForeColor = System.Drawing.Color.White;
-            this.myButton1.Location = new System.Drawing.Point(246, 85);
-            this.myButton1.Name = "myButton1";
-            this.myButton1.Size = new System.Drawing.Size(199, 102);
-            this.myButton1.TabIndex = 0;
-            this.myButton1.Text = "myButton1";
-            this.myButton1.Click += new System.EventHandler(this.myButton1_Click);
             // 
             // Form1
             // 

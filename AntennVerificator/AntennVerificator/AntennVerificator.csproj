@@ -46,10 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyCard.cs">
+    <Compile Include="Animation\Animation.cs" />
+    <Compile Include="Animation\Animator.cs" />
+    <Compile Include="Controls\MyCard.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MyButton.cs">
+    <Compile Include="Controls\MyButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Form1.cs">
@@ -85,5 +87,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -13,11 +9,12 @@ namespace AntennVerificator
     {
         #region -- Variables --
 
+        Animation animCurtain;
         private float curtainHeight;
+        private int curtainMinHeight = 50;
 
-        private bool MouseEntered = false;
-        private bool MousePressed = false;
-
+        private bool mouseEntered = false;
+        //private bool MousePressed = false;
 
         #endregion
 
@@ -42,6 +39,9 @@ namespace AntennVerificator
 
             Font = new Font("Verdana", 9F, FontStyle.Regular);
             BackColor = Color.White;
+
+            animCurtain = new Animation();
+            animCurtain.Value = curtainHeight;
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -66,6 +66,12 @@ namespace AntennVerificator
             //Stroke
             graph.DrawRectangle(new Pen(BackColor), rect);
 
+            if (animCurtain.Value == 50)
+            {
+                graph.DrawString(textDescription, fontDescription, new SolidBrush(foreColorDescription),
+                new Rectangle(15, 70, Width - 15, Height - 70));
+            }
+
             graph.DrawString(Text, Font, new SolidBrush(ForeColor), 15, Height - 37);
             graph.DrawString(textHeader, fontHeader, new SolidBrush(foreColorHeader), 
                 new Rectangle(15, 15, rectCurtain.Width, rectCurtain.Width));
@@ -80,25 +86,38 @@ namespace AntennVerificator
                 Width = 100;
             curtainHeight = Height - 60;
 
-            Invalidate();
-        }
-
-        protected override void OnMouseDown(MouseEventArgs e)
-        {
-            base.OnMouseDown(e);
-
-            MousePressed = true;
+            animCurtain = new Animation();
+            animCurtain.Value = curtainHeight;
 
             Invalidate();
         }
 
-        protected override void OnMouseUp(MouseEventArgs e)
+        protected override void OnMouseEnter(EventArgs e)
         {
-            base.OnMouseUp(e);
+            base.OnMouseEnter(e);
 
-            MousePressed = false;
+            mouseEntered = true;
 
-            Invalidate();
+            DoCurtainAnimation();
+        }
+
+        protected override void OnMouseLeave(EventArgs e)
+        {
+            base.OnMouseLeave(e);
+
+            mouseEntered = false;
+
+            DoCurtainAnimation();
+        }
+
+        private void DoCurtainAnimation()
+        {
+            if (mouseEntered)
+                animCurtain = new Animation("Curtain_" + Handle, Invalidate, animCurtain.Value, 50);
+            else
+                animCurtain = new Animation("Curtain_" + Handle, Invalidate, animCurtain.Value, curtainHeight);
+
+            Animator.Request(animCurtain, true);
         }
     }
 }
