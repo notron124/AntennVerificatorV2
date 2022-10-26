@@ -48,6 +48,9 @@
   <ItemGroup>
     <Compile Include="Animation\Animation.cs" />
     <Compile Include="Animation\Animator.cs" />
+    <Compile Include="Controls\MyToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MyCard.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -73,6 +76,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +91,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Properties\656.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\antenna.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

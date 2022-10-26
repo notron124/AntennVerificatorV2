@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AntennVerificator
 {
@@ -15,7 +11,7 @@ namespace AntennVerificator
         public float startValue;
 
         private float targetValue;
-        public float targetValuePublic
+        public float TargetValue
         {
             get => targetValue;
             set
@@ -28,6 +24,7 @@ namespace AntennVerificator
         public float volume;
 
         public bool reverse = false;
+
         public AnimationStatus Status { get; set; }
         public enum AnimationStatus
         {
@@ -87,8 +84,8 @@ namespace AntennVerificator
         }
 
         public delegate void ControlMethod();
-
         private ControlMethod InvalidateControl;
+
         public void UpdateFrame()
         {
             Status = AnimationStatus.Active;
@@ -122,18 +119,20 @@ namespace AntennVerificator
 
             InvalidateControl.Invoke();
         }
+
         public Animation() { }
-        public Animation(string ID, ControlMethod InvalidateControl, float value, float targetValue)
+
+        public Animation(string ID, ControlMethod InvalidateControl, float Value, float TargetValue)
         {
             this.ID = ID;
 
             this.InvalidateControl = InvalidateControl;
 
-            Value = value;
-            this.targetValue = targetValue;
+            this.Value = Value;
+            this.TargetValue = TargetValue;
             
             startValue = Value;
-            volume = targetValue - Value;
+            volume = TargetValue - Value;
 
             p15 = ValueByPercent(15);
             p30 = ValueByPercent(30);

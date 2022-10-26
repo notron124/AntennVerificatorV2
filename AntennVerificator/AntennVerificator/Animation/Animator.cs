@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -16,7 +14,7 @@ namespace AntennVerificator
             return AnimationList.Count;
         }
 
-        private static Thread animatorThread;
+        private static Thread AnimatorThread;
 
         private static double interval;
 
@@ -27,20 +25,20 @@ namespace AntennVerificator
             isWork = true;
             interval = 14;
 
-            animatorThread = new Thread(AnimationInvoker)
+            AnimatorThread = new Thread(AnimationInvoker)
             {
                 IsBackground = true,
                 Name = "UI Animation"
             };
 
-            animatorThread.Start();
+            AnimatorThread.Start();
         }
 
         private static void AnimationInvoker()
         {
             while (isWork)
             {
-                AnimationList.RemoveAll(a => a.Status == Animation.AnimationStatus.Completed);
+                AnimationList.RemoveAll(a => a == null || a.Status == Animation.AnimationStatus.Completed);
 
                 Parallel.For(0, Count(), index =>
                 {
@@ -51,26 +49,31 @@ namespace AntennVerificator
             }
         }
 
-        public static void Request(Animation anim, bool replaceIfExists = true)
+        public static void Request(Animation Anim, bool replaceIfExists = true)
         {
-            anim.Status = Animation.AnimationStatus.Requested;
+            Debug.WriteLine("Запуск анимации: " + Anim.ID + "| TargetValue: " + Anim.TargetValue);
+            Anim.Status = Animation.AnimationStatus.Requested;
 
-            Animation dupAnim = GetDuplicate(anim);
+            Animation dupAnim = GetDuplicate(Anim);
 
             if (dupAnim != null)
             {
-                if (replaceIfExists)
+                if (replaceIfExists == true)
+                {
                     dupAnim.Status = Animation.AnimationStatus.Completed;
+                }
                 else
+                {
                     return;
+                }
             }
 
-            AnimationList.Add(anim);
+            AnimationList.Add(Anim);
         }
 
-        private static Animation GetDuplicate (Animation anim)
+        private static Animation GetDuplicate (Animation Anim)
         {
-            return AnimationList.Find(a => a.ID == anim.ID);
+            return AnimationList.Find(a => a.ID == Anim.ID);
         }
     }
 }

@@ -16,17 +16,20 @@ namespace AntennVerificator
         private bool mouseEntered = false;
         //private bool MousePressed = false;
 
+        StringFormat SF = new StringFormat();
+
         #endregion
 
         #region -- Properties --
-        public string textHeader { get; set; } = "Header";
-        public Font fontHeader { get; set; } = new Font("Verdana", 12F, FontStyle.Bold);
-        public Color foreColorHeader { get; set; } = Color.White;
-        public string textDescription { get; set; } = "Your description";
-        public Font fontDescription { get; set; } = new Font("Verdana", 8.25F, FontStyle.Bold);
-        public Color foreColorDescription { get; set; } = Color.Black;
+        public string TextHeader { get; set; } = "Header";
+        public Font FontHeader { get; set; } = new Font("Verdana", 12F, FontStyle.Bold);
+        public Color ForeColorHeader { get; set; } = Color.White;
 
-        public Color backColorCurtain { get; set; } = Color.Blue;
+        public string TextDescription { get; set; } = "Your description";
+        public Font FontDescription { get; set; } = new Font("Verdana", 8.25F, FontStyle.Regular);
+        public Color ForeColorDescription { get; set; } = Color.Black;
+
+        public Color BackColorCurtain { get; set; } = Color.Tomato;
 
         #endregion
         public MyCard()
@@ -42,6 +45,11 @@ namespace AntennVerificator
 
             animCurtain = new Animation();
             animCurtain.Value = curtainHeight;
+
+            SF.Alignment = StringAlignment.Near;
+            SF.LineAlignment = StringAlignment.Near;
+
+            Cursor = Cursors.Hand;
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -54,36 +62,38 @@ namespace AntennVerificator
             graph.Clear(Parent.BackColor);
 
             Rectangle rect = new Rectangle(0, 0, Width - 1, Height - 1);
-            Rectangle rectCurtain = new Rectangle(0, 0, Width - 1, (int)curtainHeight);
+            Rectangle rectCurtain = new Rectangle(0, 0, Width - 1, (int)animCurtain.Value);
+            Rectangle rectDescription = new Rectangle(15, curtainMinHeight + 5, rect.Width - 30, rect.Height - 100);
 
             //back
             graph.FillRectangle(new SolidBrush(BackColor), rect);
 
             //Curtain
-            graph.DrawRectangle(new Pen(backColorCurtain), rectCurtain);
-            graph.FillRectangle(new SolidBrush(backColorCurtain), rectCurtain);
+            graph.DrawRectangle(new Pen(BackColorCurtain), rectCurtain);
+            graph.FillRectangle(new SolidBrush(BackColorCurtain), rectCurtain);
 
             //Stroke
-            graph.DrawRectangle(new Pen(BackColor), rect);
+            graph.DrawRectangle(new Pen(Color.Gray), rect);
 
-            if (animCurtain.Value == 50)
+            if (animCurtain.Value == curtainMinHeight)
             {
-                graph.DrawString(textDescription, fontDescription, new SolidBrush(foreColorDescription),
-                new Rectangle(15, 70, Width - 15, Height - 70));
+                graph.DrawString(TextDescription, FontDescription, new SolidBrush(ForeColorDescription), rectDescription, SF);
             }
 
             graph.DrawString(Text, Font, new SolidBrush(ForeColor), 15, Height - 37);
-            graph.DrawString(textHeader, fontHeader, new SolidBrush(foreColorHeader), 
+            graph.DrawString(TextHeader, FontHeader, new SolidBrush(ForeColorHeader), 
                 new Rectangle(15, 15, rectCurtain.Width, rectCurtain.Width));
         }
 
         protected override void OnSizeChanged(EventArgs e)
         {
             base.OnSizeChanged(e);
+
             if (Height <= 100)
                 Height = 100;
             if (Width <= 100)
                 Width = 100;
+
             curtainHeight = Height - 60;
 
             animCurtain = new Animation();
@@ -113,7 +123,7 @@ namespace AntennVerificator
         private void DoCurtainAnimation()
         {
             if (mouseEntered)
-                animCurtain = new Animation("Curtain_" + Handle, Invalidate, animCurtain.Value, 50);
+                animCurtain = new Animation("Curtain_" + Handle, Invalidate, animCurtain.Value, curtainMinHeight);
             else
                 animCurtain = new Animation("Curtain_" + Handle, Invalidate, animCurtain.Value, curtainHeight);
 
