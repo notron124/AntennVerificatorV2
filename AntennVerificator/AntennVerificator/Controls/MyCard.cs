@@ -31,6 +31,8 @@ namespace AntennVerificator
 
         public Color BackColorCurtain { get; set; } = Color.Tomato;
 
+        public Color strokeColor { get; set; } = Color.Gray;
+
         #endregion
         public MyCard()
         {
@@ -73,7 +75,7 @@ namespace AntennVerificator
             graph.FillRectangle(new SolidBrush(BackColorCurtain), rectCurtain);
 
             //Stroke
-            graph.DrawRectangle(new Pen(Color.Gray), rect);
+            graph.DrawRectangle(new Pen(strokeColor), rect);
 
             if (animCurtain.Value == curtainMinHeight)
             {

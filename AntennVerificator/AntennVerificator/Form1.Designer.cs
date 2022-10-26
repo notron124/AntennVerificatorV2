@@ -34,16 +34,17 @@
             this.myCard3 = new AntennVerificator.MyCard();
             this.myCard2 = new AntennVerificator.MyCard();
             this.myCard1 = new AntennVerificator.MyCard();
+            this.myToggleSwitch1 = new AntennVerificator.MyToggleSwitch();
             this.myButton3 = new AntennVerificator.MyButton();
             this.myButton2 = new AntennVerificator.MyButton();
             this.myButton1 = new AntennVerificator.MyButton();
-            this.myToggleSwitch1 = new AntennVerificator.MyToggleSwitch();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.myToggleSwitch1);
             this.panel1.Controls.Add(this.myButton3);
             this.panel1.Controls.Add(this.myButton2);
             this.panel1.Controls.Add(this.myButton1);
@@ -55,11 +56,10 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.myToggleSwitch1);
             this.panel2.Controls.Add(this.myCard3);
             this.panel2.Controls.Add(this.myCard2);
             this.panel2.Controls.Add(this.myCard1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(224, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(665, 515);
@@ -79,6 +79,7 @@
             this.myCard3.Location = new System.Drawing.Point(442, 12);
             this.myCard3.Name = "myCard3";
             this.myCard3.Size = new System.Drawing.Size(212, 243);
+            this.myCard3.strokeColor = System.Drawing.Color.Gray;
             this.myCard3.TabIndex = 2;
             this.myCard3.Text = "1234567890";
             this.myCard3.TextDescription = "Antenna 3 description";
@@ -98,6 +99,7 @@
             this.myCard2.Location = new System.Drawing.Point(224, 12);
             this.myCard2.Name = "myCard2";
             this.myCard2.Size = new System.Drawing.Size(212, 243);
+            this.myCard2.strokeColor = System.Drawing.Color.Gray;
             this.myCard2.TabIndex = 2;
             this.myCard2.Text = "1234567890";
             this.myCard2.TextDescription = "Antenna 2 description";
@@ -117,10 +119,24 @@
             this.myCard1.Location = new System.Drawing.Point(6, 12);
             this.myCard1.Name = "myCard1";
             this.myCard1.Size = new System.Drawing.Size(212, 243);
+            this.myCard1.strokeColor = System.Drawing.Color.Gray;
             this.myCard1.TabIndex = 2;
             this.myCard1.Text = "1234567890";
             this.myCard1.TextDescription = "Antenna 1 description";
             this.myCard1.TextHeader = "Antenna 1";
+            // 
+            // myToggleSwitch1
+            // 
+            this.myToggleSwitch1.BackColor = System.Drawing.Color.SlateGray;
+            this.myToggleSwitch1.backColorOn = System.Drawing.Color.MediumAquamarine;
+            this.myToggleSwitch1.Checked = true;
+            this.myToggleSwitch1.Font = new System.Drawing.Font("Verdana", 9F);
+            this.myToggleSwitch1.Location = new System.Drawing.Point(12, 484);
+            this.myToggleSwitch1.Name = "myToggleSwitch1";
+            this.myToggleSwitch1.Size = new System.Drawing.Size(37, 19);
+            this.myToggleSwitch1.strokeColor = System.Drawing.Color.Gray;
+            this.myToggleSwitch1.TabIndex = 3;
+            this.myToggleSwitch1.Text = "myToggleSwitch1";
             // 
             // myButton3
             // 
@@ -151,18 +167,6 @@
             this.myButton1.Size = new System.Drawing.Size(197, 57);
             this.myButton1.TabIndex = 5;
             this.myButton1.Text = "myButton1";
-            // 
-            // myToggleSwitch1
-            // 
-            this.myToggleSwitch1.BackColor = System.Drawing.Color.White;
-            this.myToggleSwitch1.backColorOn = System.Drawing.Color.Green;
-            this.myToggleSwitch1.Checked = false;
-            this.myToggleSwitch1.Font = new System.Drawing.Font("Verdana", 9F);
-            this.myToggleSwitch1.Location = new System.Drawing.Point(6, 450);
-            this.myToggleSwitch1.Name = "myToggleSwitch1";
-            this.myToggleSwitch1.Size = new System.Drawing.Size(647, 53);
-            this.myToggleSwitch1.TabIndex = 3;
-            this.myToggleSwitch1.Text = "myToggleSwitch1";
             // 
             // Form1
             // 

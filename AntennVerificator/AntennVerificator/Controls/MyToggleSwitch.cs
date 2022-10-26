@@ -18,6 +18,7 @@ namespace AntennVerificator
         #region -- Properties --
         public bool Checked { get; set; } = false;
         public Color backColorOn { get; set; } = Color.Green;
+        public Color strokeColor { get; set; } = Color.Gray;
         #endregion
 
         public MyToggleSwitch()
@@ -52,8 +53,8 @@ namespace AntennVerificator
             graph.SmoothingMode = SmoothingMode.HighQuality;
             graph.Clear(Parent.BackColor);
 
-            Pen TSPen = new Pen(Color.BlueViolet, 3);
-            Pen TSPenToggle = new Pen(Color.BlueViolet, 3);
+            Pen TSPen = new Pen(strokeColor, 3);
+            Pen TSPenToggle = new Pen(strokeColor, 3);
 
             GraphicsPath rectGP = RoundedRectange(rect, rect.Height);
 
