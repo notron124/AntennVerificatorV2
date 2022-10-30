@@ -1,9 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Windows.Forms.Design;
+using System.Windows.Forms;
+
+
 namespace AntennVerificator
 {
     public class MyTextBox : Control
@@ -21,18 +22,49 @@ namespace AntennVerificator
 
         #region -- Properties --
         public string TextPreview { get; set; } = "Input Text";
-        public Font FontTextPreview { get; set; } = new Font("Arial", 8, FontStyle.Bold);
+        public Font fontTextPreview { get; set; } = new Font("Arial", 8, FontStyle.Bold);
+        public Font FontTextPreview
+        {
+            get => fontTextPreview;
+            set
+            {
+                // Ограничение, чтобы размер шрифта заголовка нельзя было установить больше, 
+                // чем размер основного шрифта
+                if (value.Size >= Font.Size)
+                    return;
+                fontTextPreview = value;
+            }
+        }
         public Color BorderColor { get; set; } = Color.Blue;
         public Color BorderColorNotActive { get; set; } = Color.DarkBlue;
 
         public string TextInput
         {
             get => tbInput.Text;
-            set => tbInput.Text = value;
+            set
+            {
+                tbInput.Text = value;
+                Refresh();
+            }
         }
 
-        [Browsable(false)]
-        public new string Text { get; set; }
+        public new string Text 
+        { get => tbInput.Text; 
+            set
+            {
+                tbInput.Text = value;
+                Refresh();
+            }
+        }
+        #endregion
+
+        #region -- Events --
+        [Browsable(true)]
+        public new event EventHandler TextChanged
+        {
+            add { tbInput.TextChanged += value; }
+            remove { tbInput.TextChanged -= value; }
+        }
         #endregion
 
         public MyTextBox()
@@ -45,11 +77,13 @@ namespace AntennVerificator
             ForeColor = Color.Black;
             BackColor = Color.White;
 
+            Cursor = Cursors.IBeam;
+
             SF.Alignment = StringAlignment.Center;
             SF.LineAlignment = StringAlignment.Center;
 
             AdjustTextBoxInput();
-            this.Controls.Add(tbInput);
+            Controls.Add(tbInput);
 
             LocationTextPreviewAnim.Value = tbInput.Location.Y;
             FontSizeTextPreviewAnim.Value = Font.Size;
@@ -58,7 +92,8 @@ namespace AntennVerificator
         protected override void OnCreateControl()
         {
             base.OnCreateControl();
-            tbInput.Text = Text;
+
+            TextPreviewAction(TextInput.Length > 0);
         }
 
         private void AdjustTextBoxInput()
@@ -71,6 +106,7 @@ namespace AntennVerificator
                 ForeColor = ForeColor,
                 Font = Font
             };
+            tbInput.Visible = false;
 
             int offset = TextRenderer.MeasureText(TextPreview, FontTextPreview).Height / 2;
             tbInput.Location = new Point(5, Height / 2 - offset);
@@ -100,6 +136,11 @@ namespace AntennVerificator
             base.OnFontChanged(e);
             tbInput.Font = Font;
         }
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            base.OnSizeChanged(e);
+            tbInput.Size = new Size(Width - 10, tbInput.Height);
+        }
         #endregion
 
         protected override void OnPaint(PaintEventArgs e)
@@ -119,7 +160,7 @@ namespace AntennVerificator
                 tbInput.Visible = true;
                 tbInput.Focus();
             }
-            else if (tbInput.Visible == true && FontTextPreviewActual.Size <= FontTextPreview.Size)
+            else if (tbInput.Visible == true && FontTextPreviewActual.Size > FontTextPreview.Size)
                 tbInput.Visible = false;
 
             Rectangle rectBase = new Rectangle(0, topBorderOffset, Width - 1, Height - 1 - topBorderOffset);
@@ -137,7 +178,7 @@ namespace AntennVerificator
             //Back
             graph.FillRectangle(new SolidBrush(BackColor), rectBase);
 
-            graph.DrawString(TextPreview, FontTextPreviewActual, new SolidBrush(tbInput.Focused == true ? BorderColor : BorderColorNotActive), rectTextPreview);
+            graph.DrawString(TextPreview, FontTextPreviewActual, new SolidBrush(tbInput.Focused == true ? BorderColor : BorderColorNotActive), rectTextPreview, SF);
         }
 
         private void TextPreviewAction(bool onTop)
@@ -171,6 +212,11 @@ namespace AntennVerificator
 
             Animator.Request(LocationTextPreviewAnim, true);
             Animator.Request(FontSizeTextPreviewAnim, true);
+        }
+        protected override void OnGotFocus(EventArgs e)
+        {
+            base.OnGotFocus(e);
+            TextPreviewAction(true);
         }
 
         protected override void OnMouseClick(MouseEventArgs e)

@@ -20,3 +20,5 @@ C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\A
 C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.CoreCompileInputs.cache
 C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.exe
 C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.pdb
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Form2.resources
+D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Form3.resources
