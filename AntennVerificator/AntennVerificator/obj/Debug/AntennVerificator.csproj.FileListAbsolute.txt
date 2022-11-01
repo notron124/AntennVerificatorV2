@@ -24,3 +24,9 @@ D:\GitHub\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\Ante
 C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.resources
 C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Form2.resources
 C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Form3.resources
+C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\en\AntennVerificator.resources.dll
+C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\ru\AntennVerificator.resources.dll
+C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.en.resources
+C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.ru.resources
+C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\en\AntennVerificator.resources.dll
+C:\Users\zhambakievrr\Atollic\TrueSTUDIO\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\ru\AntennVerificator.resources.dll
