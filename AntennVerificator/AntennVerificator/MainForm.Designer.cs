@@ -90,12 +90,12 @@
             // 
             // panelPresets
             // 
+            resources.ApplyResources(this.panelPresets, "panelPresets");
             this.panelPresets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
             this.panelPresets.Controls.Add(this.button12);
             this.panelPresets.Controls.Add(this.button13);
             this.panelPresets.Controls.Add(this.button14);
             this.panelPresets.Controls.Add(this.button15);
-            resources.ApplyResources(this.panelPresets, "panelPresets");
             this.panelPresets.Name = "panelPresets";
             // 
             // button12
@@ -129,6 +129,7 @@
             this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.Name = "button15";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // btnPresets
             // 
@@ -150,12 +151,12 @@
             // 
             // panelSettingsSubMenu
             // 
+            resources.ApplyResources(this.panelSettingsSubMenu, "panelSettingsSubMenu");
             this.panelSettingsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
             this.panelSettingsSubMenu.Controls.Add(this.button6);
             this.panelSettingsSubMenu.Controls.Add(this.button7);
             this.panelSettingsSubMenu.Controls.Add(this.button8);
             this.panelSettingsSubMenu.Controls.Add(this.button9);
-            resources.ApplyResources(this.panelSettingsSubMenu, "panelSettingsSubMenu");
             this.panelSettingsSubMenu.Name = "panelSettingsSubMenu";
             // 
             // button6
@@ -201,12 +202,12 @@
             // 
             // panelSubMenu
             // 
+            resources.ApplyResources(this.panelSubMenu, "panelSubMenu");
             this.panelSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
             this.panelSubMenu.Controls.Add(this.button4);
             this.panelSubMenu.Controls.Add(this.button3);
             this.panelSubMenu.Controls.Add(this.button1);
             this.panelSubMenu.Controls.Add(this.button2);
-            resources.ApplyResources(this.panelSubMenu, "panelSubMenu");
             this.panelSubMenu.Name = "panelSubMenu";
             // 
             // button4
@@ -253,8 +254,8 @@
             // 
             // panelLogo
             // 
-            this.panelLogo.Controls.Add(this.pictureBox2);
             resources.ApplyResources(this.panelLogo, "panelLogo");
+            this.panelLogo.Controls.Add(this.pictureBox2);
             this.panelLogo.Name = "panelLogo";
             // 
             // pictureBox2
@@ -266,9 +267,9 @@
             // 
             // panelChildForm
             // 
+            resources.ApplyResources(this.panelChildForm, "panelChildForm");
             this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(115)))));
             this.panelChildForm.Controls.Add(this.pictureBox1);
-            resources.ApplyResources(this.panelChildForm, "panelChildForm");
             this.panelChildForm.Name = "panelChildForm";
             // 
             // pictureBox1

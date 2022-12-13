@@ -62,6 +62,12 @@ namespace AntennVerificator
             MessageBox.Show("Программа для поверки антенн.\n" + "Разработана студентами ИРИТ-РТФ, группы РИ-490009:\n" + 
                 "\nЖамбакиев Радий\n" + "Шестаков Сергей\n" + "Ждановских Владислав\n" + "Котельников Никита\n" + "\nЕкатеринбург 2022г");
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            uiControl.OpenChildForm(new Instruction(), panelChildForm);
+            uiControl.HideSubMenu(panelPresets);
+        }
         #endregion
     }
 }
