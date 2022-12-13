@@ -187,7 +187,7 @@ namespace AntennVerificator
             {
                 if (tbInput.Visible == false)
                 {
-                    LocationTextPreviewAnim = new Animation("TextPreviewLocation" + Handle, Invalidate, LocationTextPreviewAnim.Value, 0);
+                    LocationTextPreviewAnim = new Animation("TextPreviewLocation" + Handle, Invalidate, LocationTextPreviewAnim.Value, 10);
                     FontSizeTextPreviewAnim = new Animation("TextPreviewFontSize" + Handle, Invalidate, FontSizeTextPreviewAnim.Value, FontTextPreview.Size);
                 }
                 else

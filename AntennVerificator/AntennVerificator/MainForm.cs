@@ -20,7 +20,7 @@ namespace AntennVerificator
         {
             InitializeComponent();
             HideAllSubMenus();
-            //Animator.Start();
+            Animator.Start();
         }
         private void HideAllSubMenus()
         {
@@ -48,7 +48,7 @@ namespace AntennVerificator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            uiControl.OpenChildForm(new Form2(), panelChildForm);
+            uiControl.OpenChildForm(new DataBase(), panelChildForm);
             uiControl.HideSubMenu(panelSubMenu);
         }
 
