@@ -15,11 +15,9 @@ namespace AntennVerificator
         public string FreqDots { get; set; }
 
 
-        public Antenna() { }
+        public Antenna() {}
 
         //Конструктор
-
-
         public Antenna(string name, string freq, string description, string freqdots)
         {
             Name = name;
@@ -27,6 +25,7 @@ namespace AntennVerificator
             Description = description;
             FreqDots = freqdots;
         }
+
     }
 
 

@@ -36,13 +36,16 @@
             this.changeBtn = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.closeBtn = new System.Windows.Forms.Button();
-            this.tbID = new AntennVerificator.MyTextBox();
-            this.tbName = new AntennVerificator.MyTextBox();
-            this.tbFreqRange = new AntennVerificator.MyTextBox();
             this.tbDiscription = new System.Windows.Forms.RichTextBox();
             this.lbDiscription = new System.Windows.Forms.Label();
             this.tbFreqPoints = new System.Windows.Forms.RichTextBox();
             this.lbFreqPoints = new System.Windows.Forms.Label();
+            this.tbID = new System.Windows.Forms.RichTextBox();
+            this.lbID = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.RichTextBox();
+            this.lbName = new System.Windows.Forms.Label();
+            this.tbFreqRange = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // writeInDbBtn
@@ -103,59 +106,17 @@
             this.addBtn.ForeColor = System.Drawing.Color.White;
             this.addBtn.Name = "addBtn";
             this.addBtn.UseVisualStyleBackColor = false;
-            this.addBtn.Click += new System.EventHandler(this.button1_Click);
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // closeBtn
             // 
+            resources.ApplyResources(this.closeBtn, "closeBtn");
             this.closeBtn.BackColor = System.Drawing.Color.IndianRed;
             this.closeBtn.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.closeBtn, "closeBtn");
             this.closeBtn.ForeColor = System.Drawing.Color.White;
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.UseVisualStyleBackColor = false;
-            this.closeBtn.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // tbID
-            // 
-            this.tbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
-            this.tbID.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.tbID.BorderColorNotActive = System.Drawing.Color.White;
-            this.tbID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.tbID, "tbID");
-            this.tbID.fontTextPreview = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.tbID.FontTextPreview = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.tbID.ForeColor = System.Drawing.Color.Black;
-            this.tbID.Name = "tbID";
-            this.tbID.TextInput = "";
-            this.tbID.TextPreview = "ID";
-            // 
-            // tbName
-            // 
-            this.tbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
-            this.tbName.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.tbName.BorderColorNotActive = System.Drawing.Color.White;
-            this.tbName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.tbName, "tbName");
-            this.tbName.fontTextPreview = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.tbName.FontTextPreview = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.tbName.ForeColor = System.Drawing.Color.Black;
-            this.tbName.Name = "tbName";
-            this.tbName.TextInput = "";
-            this.tbName.TextPreview = "Название";
-            // 
-            // tbFreqRange
-            // 
-            this.tbFreqRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
-            this.tbFreqRange.BorderColor = System.Drawing.SystemColors.ControlDark;
-            this.tbFreqRange.BorderColorNotActive = System.Drawing.Color.White;
-            this.tbFreqRange.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.tbFreqRange, "tbFreqRange");
-            this.tbFreqRange.fontTextPreview = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.tbFreqRange.FontTextPreview = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.tbFreqRange.ForeColor = System.Drawing.Color.Black;
-            this.tbFreqRange.Name = "tbFreqRange";
-            this.tbFreqRange.TextInput = "";
-            this.tbFreqRange.TextPreview = "Частотый диапазон";
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // tbDiscription
             // 
@@ -181,6 +142,42 @@
             this.lbFreqPoints.ForeColor = System.Drawing.Color.White;
             this.lbFreqPoints.Name = "lbFreqPoints";
             // 
+            // tbID
+            // 
+            resources.ApplyResources(this.tbID, "tbID");
+            this.tbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
+            this.tbID.Name = "tbID";
+            // 
+            // lbID
+            // 
+            resources.ApplyResources(this.lbID, "lbID");
+            this.lbID.ForeColor = System.Drawing.Color.White;
+            this.lbID.Name = "lbID";
+            // 
+            // tbName
+            // 
+            resources.ApplyResources(this.tbName, "tbName");
+            this.tbName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
+            this.tbName.Name = "tbName";
+            // 
+            // lbName
+            // 
+            resources.ApplyResources(this.lbName, "lbName");
+            this.lbName.ForeColor = System.Drawing.Color.White;
+            this.lbName.Name = "lbName";
+            // 
+            // tbFreqRange
+            // 
+            resources.ApplyResources(this.tbFreqRange, "tbFreqRange");
+            this.tbFreqRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
+            this.tbFreqRange.Name = "tbFreqRange";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
             // DataBase
             // 
             resources.ApplyResources(this, "$this");
@@ -188,11 +185,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(115)))));
             this.Controls.Add(this.lbFreqPoints);
             this.Controls.Add(this.tbFreqPoints);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbName);
+            this.Controls.Add(this.lbID);
             this.Controls.Add(this.lbDiscription);
-            this.Controls.Add(this.tbDiscription);
             this.Controls.Add(this.tbFreqRange);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.tbID);
+            this.Controls.Add(this.tbDiscription);
             this.Controls.Add(this.writeInDbBtn);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.clearBtn);
@@ -215,12 +215,15 @@
         private System.Windows.Forms.Button changeBtn;
         private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button closeBtn;
-        private MyTextBox tbID;
-        private MyTextBox tbName;
-        private MyTextBox tbFreqRange;
         private System.Windows.Forms.RichTextBox tbDiscription;
         private System.Windows.Forms.Label lbDiscription;
         private System.Windows.Forms.RichTextBox tbFreqPoints;
         private System.Windows.Forms.Label lbFreqPoints;
+        private System.Windows.Forms.RichTextBox tbID;
+        private System.Windows.Forms.Label lbID;
+        private System.Windows.Forms.RichTextBox tbName;
+        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.RichTextBox tbFreqRange;
+        private System.Windows.Forms.Label label1;
     }
 }

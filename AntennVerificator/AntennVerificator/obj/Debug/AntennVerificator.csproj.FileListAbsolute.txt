@@ -38,7 +38,6 @@ C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.AssemblyReference.cache
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.SuggestedBindingRedirects.cache
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.resources
-C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Form3.resources
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Properties.Resources.resources
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.en.resources
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.ru.resources
@@ -52,3 +51,8 @@ C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.DataBase.resources
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\AntennaDB.mdf
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\AntennaDB_log.ldf
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\bin\Debug\ru-BY\AntennVerificator.resources.dll
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Calculator.resources
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.ru-BY.resources
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\ru-BY\AntennVerificator.resources.dll
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.DataBase.ru.resources

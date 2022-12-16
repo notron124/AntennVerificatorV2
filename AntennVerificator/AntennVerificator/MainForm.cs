@@ -24,17 +24,10 @@ namespace AntennVerificator
         }
         private void HideAllSubMenus()
         {
-            panelSubMenu.Visible = false;
-            panelSettingsSubMenu.Visible = false;
             panelPresets.Visible = false;
             //Continue if more panels are added
         }
         #region -- Button Events --
-        private void btnMenu1_Click(object sender, EventArgs e)
-        {
-            button2.Enabled = true;
-            uiControl.ShowSubMenu(panelSubMenu);
-        }
 
         private void btnPresets_Click(object sender, EventArgs e)
         {
@@ -43,18 +36,12 @@ namespace AntennVerificator
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            uiControl.ShowSubMenu(panelSettingsSubMenu);
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            uiControl.OpenChildForm(new DataBase(), panelChildForm);
-            uiControl.HideSubMenu(panelSubMenu);
         }
 
         private void btnAntennaDB_Click(object sender, EventArgs e)
         {
-            uiControl.OpenChildForm(new Form3(), panelChildForm);
+            uiControl.OpenChildForm(new DataBase(), panelChildForm);
         }
 
         private void btnAbout_Click(object sender, EventArgs e)
@@ -69,5 +56,10 @@ namespace AntennVerificator
             uiControl.HideSubMenu(panelPresets);
         }
         #endregion
+
+        private void calculateBtn_Click(object sender, EventArgs e)
+        {
+            uiControl.OpenChildForm(new Calculator(), panelChildForm);
+        }
     }
 }
