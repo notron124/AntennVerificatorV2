@@ -31,33 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSildeMenu = new System.Windows.Forms.Panel();
             this.btnAbout = new System.Windows.Forms.Button();
-            this.panelPresets = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
             this.btnPresets = new System.Windows.Forms.Button();
             this.btnAntennaDB = new System.Windows.Forms.Button();
-            this.panelSettingsSubMenu = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
-            this.panelSubMenu = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnMenu1 = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.panelSildeMenu.SuspendLayout();
-            this.panelPresets.SuspendLayout();
-            this.panelSettingsSubMenu.SuspendLayout();
-            this.panelSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelChildForm.SuspendLayout();
@@ -69,12 +51,9 @@
             resources.ApplyResources(this.panelSildeMenu, "panelSildeMenu");
             this.panelSildeMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(122)))));
             this.panelSildeMenu.Controls.Add(this.btnAbout);
-            this.panelSildeMenu.Controls.Add(this.panelPresets);
             this.panelSildeMenu.Controls.Add(this.btnPresets);
             this.panelSildeMenu.Controls.Add(this.btnAntennaDB);
-            this.panelSildeMenu.Controls.Add(this.panelSettingsSubMenu);
             this.panelSildeMenu.Controls.Add(this.btnSettings);
-            this.panelSildeMenu.Controls.Add(this.panelSubMenu);
             this.panelSildeMenu.Controls.Add(this.btnMenu1);
             this.panelSildeMenu.Controls.Add(this.panelLogo);
             this.panelSildeMenu.Name = "panelSildeMenu";
@@ -88,49 +67,6 @@
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
-            // panelPresets
-            // 
-            resources.ApplyResources(this.panelPresets, "panelPresets");
-            this.panelPresets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
-            this.panelPresets.Controls.Add(this.button12);
-            this.panelPresets.Controls.Add(this.button13);
-            this.panelPresets.Controls.Add(this.button14);
-            this.panelPresets.Controls.Add(this.button15);
-            this.panelPresets.Name = "panelPresets";
-            // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
             // btnPresets
             // 
             resources.ApplyResources(this.btnPresets, "btnPresets");
@@ -138,7 +74,7 @@
             this.btnPresets.ForeColor = System.Drawing.Color.White;
             this.btnPresets.Name = "btnPresets";
             this.btnPresets.UseVisualStyleBackColor = true;
-            this.btnPresets.Click += new System.EventHandler(this.btnPresets_Click);
+            this.btnPresets.Click += new System.EventHandler(this.btnPresets_Click_1);
             // 
             // btnAntennaDB
             // 
@@ -149,48 +85,6 @@
             this.btnAntennaDB.UseVisualStyleBackColor = true;
             this.btnAntennaDB.Click += new System.EventHandler(this.btnAntennaDB_Click);
             // 
-            // panelSettingsSubMenu
-            // 
-            resources.ApplyResources(this.panelSettingsSubMenu, "panelSettingsSubMenu");
-            this.panelSettingsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
-            this.panelSettingsSubMenu.Controls.Add(this.button6);
-            this.panelSettingsSubMenu.Controls.Add(this.button7);
-            this.panelSettingsSubMenu.Controls.Add(this.button8);
-            this.panelSettingsSubMenu.Controls.Add(this.button9);
-            this.panelSettingsSubMenu.Name = "panelSettingsSubMenu";
-            // 
-            // button6
-            // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // btnSettings
             // 
             resources.ApplyResources(this.btnSettings, "btnSettings");
@@ -199,41 +93,6 @@
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
-            // 
-            // panelSubMenu
-            // 
-            resources.ApplyResources(this.panelSubMenu, "panelSubMenu");
-            this.panelSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
-            this.panelSubMenu.Controls.Add(this.button4);
-            this.panelSubMenu.Controls.Add(this.button3);
-            this.panelSubMenu.Controls.Add(this.button1);
-            this.panelSubMenu.Controls.Add(this.button2);
-            this.panelSubMenu.Name = "panelSubMenu";
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnMenu1
             // 
@@ -271,14 +130,6 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -288,9 +139,6 @@
             this.Controls.Add(this.panelSildeMenu);
             this.Name = "MainForm";
             this.panelSildeMenu.ResumeLayout(false);
-            this.panelPresets.ResumeLayout(false);
-            this.panelSettingsSubMenu.ResumeLayout(false);
-            this.panelSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelChildForm.ResumeLayout(false);
@@ -304,29 +152,14 @@
 
         private System.Windows.Forms.Panel panelSildeMenu;
         private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.Panel panelPresets;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button btnPresets;
         private System.Windows.Forms.Button btnAntennaDB;
-        private System.Windows.Forms.Panel panelSettingsSubMenu;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Panel panelSubMenu;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnMenu1;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button4;
     }
 }
 

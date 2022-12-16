@@ -54,9 +54,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
             this.richTextBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(12, 439);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(660, 110);
+            this.richTextBox1.Size = new System.Drawing.Size(660, 537);
             this.richTextBox1.TabIndex = 38;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
