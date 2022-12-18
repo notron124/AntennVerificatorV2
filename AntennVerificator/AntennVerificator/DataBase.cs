@@ -26,7 +26,7 @@ namespace AntennVerificator
         #region --Checks for inputs--
         public bool CheckIfInputIsNotEmpty(string ID, string name, string freqRange, string discription, string freqPoints)
         {
-            return (!string.IsNullOrWhiteSpace(ID) && !string.IsNullOrWhiteSpace(name) && 
+            return (!string.IsNullOrWhiteSpace(ID) && !string.IsNullOrWhiteSpace(name) &&
                 !string.IsNullOrWhiteSpace(freqRange) &&
                 !string.IsNullOrWhiteSpace(discription) &&
                 !string.IsNullOrWhiteSpace(freqPoints));
@@ -103,7 +103,7 @@ namespace AntennVerificator
 
 
 
-            for (int i = 0; i < antennas.Count; i++)
+            /*for (int i = 0; i < antennas.Count; i++)
             {
                 sqlCommand = new SqlCommand("UPDATE Antennas SET name=@name,frequencywidth=@frequencywidth,description=@description, freqdots=@freqdots WHERE id=@id", sqlConnection);
 
@@ -115,7 +115,7 @@ namespace AntennVerificator
 
                 sqlCommand.ExecuteNonQuery();
 
-            }
+            }*/
         }
         #endregion
 
@@ -173,17 +173,42 @@ namespace AntennVerificator
                 sqlCommand.Parameters.AddWithValue("@description", rtbDiscription.Text);
                 sqlCommand.Parameters.AddWithValue("@freqdots", smas);
 
+                Antenna ant = new Antenna(rtbName.Text, rtbFreqRange.Text, rtbDiscription.Text, smas);
+                antennas.Add(ant);
+                WriteToDB(ant);
 
                 sqlCommand.ExecuteNonQuery();
 
                 ClearAllTextBoxes(tbID, tbName, tbFreqRange, tbDiscription, tbFreqPoints);
-
-                MessageBox.Show("Антенна добавлена");
+                sqlCommand = new SqlCommand("SELECT * FROM Antennas", sqlConnection);
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                int count = 0;
+                while(sqlDataReader.Read())
+                {
+                    count++;
+                }
+                MessageBox.Show("Антенна добавлена: ID = " + count);
+                sqlDataReader.Close();
+                sqlConnection.Close();
             }
             else
                 MessageBox.Show("Заполните поля:\n" + ShowWhatInputIsEmpty(tbName.Text, tbFreqRange.Text, tbDiscription.Text, tbFreqPoints.Text));
         }
+        public void WriteToDB(Antenna ant)
+        {
+            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AntennaDB.mdf;Integrated Security=True");
+            sqlConnection.Open();
 
+            sqlCommand = new SqlCommand("INSERT INTO Antennas (name,frequencywidth,description,freqdots) VALUES (@name,@frequencywidth,@description,@freqdots)", sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@name", ant.Name);
+            sqlCommand.Parameters.AddWithValue("@frequencywidth", ant.FrequencyWidth);
+            sqlCommand.Parameters.AddWithValue("@description", ant.Description);
+            sqlCommand.Parameters.AddWithValue("@freqdots", ant.FreqDots);
+            sqlCommand.ExecuteNonQuery();
+
+            MessageBox.Show("Места добавлены из структуры", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //sqlConnection.Close();
+        }
         public void AddAntenna(TextBox tbID, TextBox tbName, TextBox tbFreqRange, TextBox tbDiscription, TextBox tbFreqPoints)
         {
             if (CheckIfInputIsNotEmpty(tbName.Text, tbFreqRange.Text, tbDiscription.Text, tbFreqPoints.Text))
@@ -214,7 +239,14 @@ namespace AntennVerificator
 
                 ClearAllTextBoxes(tbID, tbName, tbFreqRange, tbDiscription, tbFreqPoints);
 
-                MessageBox.Show("Антенна добавлена");
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                sqlDataReader.Read();
+                int count = 0;
+                if (sqlDataReader.HasRows)
+                {
+                    count++;
+                }
+                MessageBox.Show("Антенна добавлена: ID = " + count);
             }
             else
                 MessageBox.Show("Заполните поля:\n" + ShowWhatInputIsEmpty(tbName.Text, tbFreqRange.Text, tbDiscription.Text, tbFreqPoints.Text));
@@ -248,8 +280,9 @@ namespace AntennVerificator
                 sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AntennaDB.mdf;Integrated Security=True");
                 sqlConnection.Open();
 
-                sqlCommand = new SqlCommand("UPDATE Antennas SET name=@name,frequencywidth=@frequencywidth,description=@description WHERE id=@id", sqlConnection);
+                sqlCommand = new SqlCommand("UPDATE Antennas SET name=@name,frequencywidth=@frequencywidth,description=@description WHERE id=" + tbID.Text + "", sqlConnection);
 
+                //sqlCommand.Parameters.AddWithValue("@id", tbID.Text);
                 sqlCommand.Parameters.AddWithValue("@name", tbName.Text);
                 sqlCommand.Parameters.AddWithValue("@frequencywidth", tbFreqRange.Text);
                 sqlCommand.Parameters.AddWithValue("@description", tbDiscription.Text);
@@ -381,7 +414,7 @@ namespace AntennVerificator
 
         public void WriteAntennaInDB()
         {
-            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AntennaDB.mdf;Integrated Security=True");
+            /*sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AntennaDB.mdf;Integrated Security=True");
             sqlConnection.Open();
             for (int i = 0; i < antennas.Count; i++)
             {
@@ -393,7 +426,7 @@ namespace AntennVerificator
                 sqlCommand.ExecuteNonQuery();
             }
             MessageBox.Show("Места добавлены из структуры", "Успешно", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            sqlConnection.Close();
+            sqlConnection.Close();*/
         }
         #endregion
         #endregion
@@ -445,5 +478,25 @@ namespace AntennVerificator
             this.Close();
         }
         #endregion
+
+        private void tbID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+
+            if (!Char.IsDigit(number))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbFreqPoints_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+
+            if (!Char.IsDigit(number) && !Char.IsPunctuation(number) && !Char.IsWhiteSpace(number))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

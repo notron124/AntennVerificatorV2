@@ -35,7 +35,6 @@
             this.deleteBtn = new System.Windows.Forms.Button();
             this.changeBtn = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
-            this.closeBtn = new System.Windows.Forms.Button();
             this.tbDiscription = new System.Windows.Forms.RichTextBox();
             this.lbDiscription = new System.Windows.Forms.Label();
             this.tbFreqPoints = new System.Windows.Forms.RichTextBox();
@@ -108,16 +107,6 @@
             this.addBtn.UseVisualStyleBackColor = false;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
-            // closeBtn
-            // 
-            resources.ApplyResources(this.closeBtn, "closeBtn");
-            this.closeBtn.BackColor = System.Drawing.Color.IndianRed;
-            this.closeBtn.FlatAppearance.BorderSize = 0;
-            this.closeBtn.ForeColor = System.Drawing.Color.White;
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.UseVisualStyleBackColor = false;
-            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
-            // 
             // tbDiscription
             // 
             resources.ApplyResources(this.tbDiscription, "tbDiscription");
@@ -135,6 +124,7 @@
             resources.ApplyResources(this.tbFreqPoints, "tbFreqPoints");
             this.tbFreqPoints.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
             this.tbFreqPoints.Name = "tbFreqPoints";
+            this.tbFreqPoints.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFreqPoints_KeyPress);
             // 
             // lbFreqPoints
             // 
@@ -147,6 +137,7 @@
             resources.ApplyResources(this.tbID, "tbID");
             this.tbID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
             this.tbID.Name = "tbID";
+            this.tbID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbID_KeyPress);
             // 
             // lbID
             // 
@@ -194,12 +185,12 @@
             this.Controls.Add(this.tbID);
             this.Controls.Add(this.tbDiscription);
             this.Controls.Add(this.writeInDbBtn);
-            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.checkBtn);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.changeBtn);
             this.Controls.Add(this.addBtn);
+            this.KeyPreview = true;
             this.Name = "DataBase";
             this.Load += new System.EventHandler(this.AntennaFormLoad);
             this.ResumeLayout(false);
@@ -214,7 +205,6 @@
         private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.Button changeBtn;
         private System.Windows.Forms.Button addBtn;
-        private System.Windows.Forms.Button closeBtn;
         private System.Windows.Forms.RichTextBox tbDiscription;
         private System.Windows.Forms.Label lbDiscription;
         private System.Windows.Forms.RichTextBox tbFreqPoints;

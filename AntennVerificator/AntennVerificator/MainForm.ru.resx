@@ -123,43 +123,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnAbout.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 445</value>
+    <value>0, 280</value>
   </data>
   <data name="btnAbout.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 42</value>
   </data>
   <data name="btnAbout.Text" xml:space="preserve">
     <value>О программе</value>
-  </data>
-  <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 40</value>
-  </data>
-  <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 40</value>
-  </data>
-  <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 40</value>
-  </data>
-  <data name="button15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 40</value>
-  </data>
-  <data name="panelPresets.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 280</value>
-  </data>
-  <data name="panelPresets.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 165</value>
   </data>
   <data name="btnPresets.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -183,7 +153,7 @@
     <value>250, 45</value>
   </data>
   <data name="btnAntennaDB.Text" xml:space="preserve">
-    <value>База данных антенн</value>
+    <value>Справка</value>
   </data>
   <data name="btnSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -195,7 +165,7 @@
     <value>250, 45</value>
   </data>
   <data name="btnSettings.Text" xml:space="preserve">
-    <value>Справка</value>
+    <value>База данных антенн</value>
   </data>
   <data name="calculateBtn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -228,13 +198,13 @@
   <data name="calculateBtn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 100</value>
+  </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 100</value>
-  </data>
-  <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>250, 100</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -3005,5 +2975,8 @@
         ////AAAA/////////////////////////////////wAAAP////////////////////////////////8A
         AAA=
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Поверка антенн</value>
   </data>
 </root>

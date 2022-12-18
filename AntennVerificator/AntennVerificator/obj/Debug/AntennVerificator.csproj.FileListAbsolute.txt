@@ -56,3 +56,35 @@ C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.ru-BY.resources
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\ru-BY\AntennVerificator.resources.dll
 C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.DataBase.ru.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\AntennaDB.mdf
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\AntennaDB_log.ldf
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\AntennVerificator.exe.config
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\AntennVerificator.exe
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\AntennVerificator.pdb
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\ru\AntennVerificator.resources.dll
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\en\AntennVerificator.resources.dll
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\bin\Debug\ru-BY\AntennVerificator.resources.dll
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.AssemblyReference.cache
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.SuggestedBindingRedirects.cache
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.DataBase.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Calculator.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Properties.Resources.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.Instruction.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.DataBase.ru.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.en.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.ru-BY.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.MainForm.ru.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.GenerateResource.cache
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.CoreCompileInputs.cache
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\ru\AntennVerificator.resources.dll
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\en\AntennVerificator.resources.dll
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\ru-BY\AntennVerificator.resources.dll
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.exe
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.pdb
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.HelpForm.resources
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.ResolveComReference.cache
+C:\Users\sshv2\Desktop\Для учебы\Проект\AntennVerificatorV2.2Radiy\AntennVerificatorV2-main\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.About.resources
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.csproj.ResolveComReference.cache
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.About.resources
+C:\Users\notron124\Source\Repos\notron124\AntennVerificatorV2\AntennVerificator\AntennVerificator\obj\Debug\AntennVerificator.HelpForm.resources

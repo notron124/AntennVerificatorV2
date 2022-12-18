@@ -234,6 +234,9 @@
   <data name="&gt;&gt;button14.Name" xml:space="preserve">
     <value>button14</value>
   </data>
+  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="panelLogo.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 100</value>
   </data>
@@ -259,7 +262,7 @@
     <value>Fill</value>
   </data>
   <data name="&gt;&gt;btnAntennaDB.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="button9.Text" xml:space="preserve">
     <value>button9</value>
@@ -276,6 +279,9 @@
   <data name="&gt;&gt;btnAbout.Name" xml:space="preserve">
     <value>btnAbout</value>
   </data>
+  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 40</value>
+  </data>
   <data name="&gt;&gt;button2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -285,8 +291,8 @@
   <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="btnPresets.Text" xml:space="preserve">
+    <value>Presets</value>
   </data>
   <data name="panelPresets.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 610</value>
@@ -301,7 +307,7 @@
     <value>button7</value>
   </data>
   <data name="&gt;&gt;calculateBtn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;calculateBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -337,7 +343,7 @@
     <value>Top</value>
   </data>
   <data name="&gt;&gt;panelLogo.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="calculateBtn1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -357,6 +363,9 @@
   <data name="&gt;&gt;btnMenu1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="btnAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
   <data name="&gt;&gt;btnAbout.Parent" xml:space="preserve">
     <value>panelSildeMenu</value>
   </data>
@@ -375,8 +384,8 @@
   <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;panelSubMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button8.Parent" xml:space="preserve">
     <value>panelSettingsSubMenu</value>
@@ -405,8 +414,8 @@
   <data name="&gt;&gt;panelSettingsSubMenu.Name" xml:space="preserve">
     <value>panelSettingsSubMenu</value>
   </data>
-  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="btnAntennaDB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 520</value>
   </data>
   <data name="&gt;&gt;panelSettingsSubMenu.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -474,9 +483,6 @@
   <data name="&gt;&gt;panelPresets.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="btnPresets.Text" xml:space="preserve">
-    <value>Presets</value>
-  </data>
   <data name="&gt;&gt;button9.Parent" xml:space="preserve">
     <value>panelSettingsSubMenu</value>
   </data>
@@ -504,6 +510,9 @@
   <data name="btnSettings.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="button1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>35, 0, 0, 0</value>
+  </data>
   <data name="&gt;&gt;button15.Name" xml:space="preserve">
     <value>button15</value>
   </data>
@@ -517,7 +526,7 @@
     <value>Flat</value>
   </data>
   <data name="&gt;&gt;btnPresets.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="button15.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>35, 0, 0, 0</value>
@@ -531,14 +540,11 @@
   <data name="button3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnMenu1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 100</value>
   </data>
   <data name="panelPresets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
-  </data>
-  <data name="&gt;&gt;button9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="panelChildForm.Size" type="System.Drawing.Size, System.Drawing">
     <value>684, 561</value>
@@ -572,9 +578,6 @@
   </data>
   <data name="button2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>35, 0, 0, 0</value>
-  </data>
-  <data name="btnAntennaDB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 520</value>
   </data>
   <data name="button2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -615,6 +618,9 @@
   <data name="&gt;&gt;calculateBtn1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="btnMenu1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="panelSildeMenu.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -645,6 +651,9 @@
   <data name="&gt;&gt;panelChildForm.Name" xml:space="preserve">
     <value>panelChildForm</value>
   </data>
+  <data name="&gt;&gt;panelSubMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -666,11 +675,8 @@
   <data name="button13.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 100</value>
-  </data>
   <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -713,9 +719,6 @@
   </data>
   <data name="&gt;&gt;btnAntennaDB.Name" xml:space="preserve">
     <value>btnAntennaDB</value>
-  </data>
-  <data name="button6.Text" xml:space="preserve">
-    <value>button6</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>panelLogo</value>
@@ -3507,9 +3510,6 @@
   <data name="&gt;&gt;calculateBtn1.Name" xml:space="preserve">
     <value>calculateBtn1</value>
   </data>
-  <data name="btnPresets.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -3654,8 +3654,8 @@
   <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 80</value>
   </data>
-  <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 40</value>
+  <data name="button6.Text" xml:space="preserve">
+    <value>button6</value>
   </data>
   <data name="button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -3747,8 +3747,8 @@
   <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 40</value>
   </data>
-  <data name="btnAbout.Text" xml:space="preserve">
-    <value>About</value>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;panelChildForm.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3822,8 +3822,8 @@
   <data name="btnAbout.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="button1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>35, 0, 0, 0</value>
+  <data name="btnPresets.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
   </data>
   <data name="button13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>

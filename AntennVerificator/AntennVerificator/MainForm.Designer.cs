@@ -30,11 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSildeMenu = new System.Windows.Forms.Panel();
-            this.panelPresets = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.btnAbout = new System.Windows.Forms.Button();
             this.btnPresets = new System.Windows.Forms.Button();
             this.btnAntennaDB = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -43,9 +39,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAbout = new System.Windows.Forms.Button();
             this.panelSildeMenu.SuspendLayout();
-            this.panelPresets.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelChildForm.SuspendLayout();
@@ -57,7 +51,6 @@
             resources.ApplyResources(this.panelSildeMenu, "panelSildeMenu");
             this.panelSildeMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(122)))));
             this.panelSildeMenu.Controls.Add(this.btnAbout);
-            this.panelSildeMenu.Controls.Add(this.panelPresets);
             this.panelSildeMenu.Controls.Add(this.btnPresets);
             this.panelSildeMenu.Controls.Add(this.btnAntennaDB);
             this.panelSildeMenu.Controls.Add(this.btnSettings);
@@ -65,48 +58,14 @@
             this.panelSildeMenu.Controls.Add(this.panelLogo);
             this.panelSildeMenu.Name = "panelSildeMenu";
             // 
-            // panelPresets
+            // btnAbout
             // 
-            resources.ApplyResources(this.panelPresets, "panelPresets");
-            this.panelPresets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
-            this.panelPresets.Controls.Add(this.button12);
-            this.panelPresets.Controls.Add(this.button13);
-            this.panelPresets.Controls.Add(this.button14);
-            this.panelPresets.Controls.Add(this.button15);
-            this.panelPresets.Name = "panelPresets";
-            // 
-            // button12
-            // 
-            resources.ApplyResources(this.button12, "button12");
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Name = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.FlatAppearance.BorderSize = 0;
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            resources.ApplyResources(this.btnAbout, "btnAbout");
+            this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.ForeColor = System.Drawing.Color.White;
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // btnPresets
             // 
@@ -171,15 +130,6 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // btnAbout
-            // 
-            resources.ApplyResources(this.btnAbout, "btnAbout");
-            this.btnAbout.FlatAppearance.BorderSize = 0;
-            this.btnAbout.ForeColor = System.Drawing.Color.White;
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.UseVisualStyleBackColor = true;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
-            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -188,8 +138,8 @@
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSildeMenu);
             this.Name = "MainForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.panelSildeMenu.ResumeLayout(false);
-            this.panelPresets.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelChildForm.ResumeLayout(false);
@@ -202,11 +152,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelSildeMenu;
-        private System.Windows.Forms.Panel panelPresets;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button btnPresets;
         private System.Windows.Forms.Button btnAntennaDB;
         private System.Windows.Forms.Button btnSettings;

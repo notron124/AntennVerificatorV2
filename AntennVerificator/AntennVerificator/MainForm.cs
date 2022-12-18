@@ -24,42 +24,40 @@ namespace AntennVerificator
         }
         private void HideAllSubMenus()
         {
-            panelPresets.Visible = false;
             //Continue if more panels are added
         }
         #region -- Button Events --
 
-        private void btnPresets_Click(object sender, EventArgs e)
-        {
-            uiControl.ShowSubMenu(panelPresets);
-        }
 
         private void btnSettings_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAntennaDB_Click(object sender, EventArgs e)
         {
             uiControl.OpenChildForm(new DataBase(), panelChildForm);
         }
 
-        private void btnAbout_Click(object sender, EventArgs e)
+        private void btnAntennaDB_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Программа для поверки антенн.\n" + "Разработана студентами ИРИТ-РТФ, группы РИ-490009:\n" + 
-                "\nЖамбакиев Радий\n" + "Шестаков Сергей\n" + "Ждановских Владислав\n" + "Котельников Никита\n" + "\nЕкатеринбург 2022г");
+            uiControl.OpenChildForm(new HelpForm(), panelChildForm);
         }
 
-        private void button15_Click(object sender, EventArgs e)
+        private void btnAbout_Click(object sender, EventArgs e)
         {
-            uiControl.OpenChildForm(new Instruction(), panelChildForm);
-            uiControl.HideSubMenu(panelPresets);
+            uiControl.OpenChildForm(new About(), panelChildForm);
         }
         #endregion
 
         private void calculateBtn_Click(object sender, EventArgs e)
         {
             uiControl.OpenChildForm(new Calculator(), panelChildForm);
+        }
+
+        private void btnPresets_Click(object sender, EventArgs e)
+        {
+            uiControl.OpenChildForm(new Instruction(), panelChildForm);
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }
