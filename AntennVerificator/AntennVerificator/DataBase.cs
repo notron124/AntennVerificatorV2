@@ -9,6 +9,7 @@ using System.Globalization;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 using TextBox = System.Windows.Forms.TextBox;
+using System.Linq.Expressions;
 
 namespace AntennVerificator
 {
@@ -136,6 +137,47 @@ namespace AntennVerificator
             tbFreqRange.Text = "";
             tbDiscription.Text = "";
             tbFreqPoints.Text = "";
+        }
+
+        private string SequenceFromTo(string from, string to, string step)
+        {
+            string sequence = "";
+            int i = 0, N = 0, stp = 0;
+            try
+            {
+                i = Int32.Parse(from);
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show($"Неверный формат данных: '{from}'", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return sequence;
+            }
+
+            try
+            {
+                N = Int32.Parse(to);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show($"Неверный формат данных: '{to}'", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return sequence;
+            }
+
+            try
+            {
+                stp = Int32.Parse(step);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show($"Неверный формат данных: '{to}'", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return sequence;
+            }
+
+            for (; i < N + stp; i += stp)
+            {
+                sequence += i.ToString() + " ";
+            }
+                return sequence;
         }
         #endregion
 
@@ -497,6 +539,11 @@ namespace AntennVerificator
             {
                 e.Handled = true;
             }
+        }
+
+        private void FillBtn_Click(object sender, EventArgs e)
+        {
+            tbFreqPoints.Text = SequenceFromTo(tbFrom.Text, tbTo.Text, tbStep.Text);
         }
     }
 }

@@ -153,10 +153,10 @@
     <value>Arial, 14pt</value>
   </data>
   <data name="tbFreqPoints.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 377</value>
+    <value>12, 407</value>
   </data>
   <data name="lbFreqPoints.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 355</value>
+    <value>11, 383</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tbID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -236,6 +236,120 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Частотный диапазон</value>
+  </data>
+  <data name="tbFrom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14pt</value>
+  </data>
+  <data name="tbFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 369</value>
+  </data>
+  <data name="tbFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 31</value>
+  </data>
+  <data name="tbTo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14pt</value>
+  </data>
+  <data name="tbTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 369</value>
+  </data>
+  <data name="tbTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 31</value>
+  </data>
+  <data name="labelFrom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelFrom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 10pt</value>
+  </data>
+  <data name="labelFrom.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 375</value>
+  </data>
+  <data name="labelFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 19</value>
+  </data>
+  <data name="labelFrom.Text" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="labelTo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelTo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 10pt</value>
+  </data>
+  <data name="labelTo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>331, 375</value>
+  </data>
+  <data name="labelTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 19</value>
+  </data>
+  <data name="labelTo.Text" xml:space="preserve">
+    <value>До</value>
+  </data>
+  <data name="FillBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="FillBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="FillBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 10pt</value>
+  </data>
+  <data name="FillBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FillBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 367</value>
+  </data>
+  <data name="FillBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 34</value>
+  </data>
+  <data name="FillBtn.Text" xml:space="preserve">
+    <value>Заполнить</value>
+  </data>
+  <data name="tbStep.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 14pt</value>
+  </data>
+  <data name="tbStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 369</value>
+  </data>
+  <data name="tbStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 31</value>
+  </data>
+  <data name="tbStep.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="tbStep.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelStep.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelStep.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 10pt</value>
+  </data>
+  <data name="labelStep.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 375</value>
+  </data>
+  <data name="labelStep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 19</value>
+  </data>
+  <data name="labelStep.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="labelStep.Text" xml:space="preserve">
+    <value>Шаг</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>База данных антенн</value>

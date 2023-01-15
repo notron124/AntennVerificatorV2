@@ -122,14 +122,23 @@
     <value>660, 144</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="tbFreqPoints.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt</value>
   </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="closeBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 27</value>
+  </data>
   <data name="&gt;&gt;tbDiscription.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lbID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbID.Parent" xml:space="preserve">
     <value>$this</value>
@@ -138,20 +147,23 @@
     <value />
   </data>
   <data name="&gt;&gt;changeBtn.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>20</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="closeBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="addBtn.Text" xml:space="preserve">
-    <value>Добавить</value>
+  <data name="&gt;&gt;tbName.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;lbID.Name" xml:space="preserve">
     <value>lbID</value>
   </data>
   <data name="writeInDbBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="labelFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="closeBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -162,6 +174,12 @@
   <data name="lbName.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 106</value>
   </data>
+  <data name="&gt;&gt;tbFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FillBtn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;lbFreqPoints.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -171,11 +189,23 @@
   <data name="&gt;&gt;clearBtn.Name" xml:space="preserve">
     <value>clearBtn</value>
   </data>
-  <data name="&gt;&gt;changeBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 375</value>
+  </data>
+  <data name="tbFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 368</value>
+  </data>
+  <data name="&gt;&gt;labelFrom.Name" xml:space="preserve">
+    <value>labelFrom</value>
+  </data>
+  <data name="buttonFill.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 365</value>
   </data>
   <data name="clearBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 10pt</value>
+  </data>
+  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 368</value>
   </data>
   <data name="&gt;&gt;tbFreqPoints.Name" xml:space="preserve">
     <value>tbFreqPoints</value>
@@ -186,8 +216,11 @@
   <data name="changeBtn.Text" xml:space="preserve">
     <value>Изменить</value>
   </data>
-  <data name="lbDiscription.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="&gt;&gt;labelTo.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="addBtn.Text" xml:space="preserve">
+    <value>Добавить</value>
   </data>
   <data name="clearBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -197,6 +230,9 @@
   </data>
   <data name="&gt;&gt;clearBtn.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="deleteBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;closeBtn.Name" xml:space="preserve">
     <value>closeBtn</value>
@@ -209,6 +245,9 @@
   </data>
   <data name="tbFreqPoints.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 405</value>
+  </data>
+  <data name="FillBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="changeBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>522, 49</value>
@@ -223,7 +262,7 @@
     <value>36</value>
   </data>
   <data name="&gt;&gt;clearBtn.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;lbName.Parent" xml:space="preserve">
     <value>$this</value>
@@ -240,6 +279,12 @@
   <data name="tbFreqRange.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 164</value>
   </data>
+  <data name="&gt;&gt;lbDiscription.Name" xml:space="preserve">
+    <value>lbDiscription</value>
+  </data>
+  <data name="tbStep.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>ID</value>
   </data>
@@ -249,11 +294,11 @@
   <data name="addBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>339, 49</value>
   </data>
+  <data name="&gt;&gt;labelFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lbFreqPoints.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
-  </data>
-  <data name="addBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 40</value>
   </data>
   <data name="lbDiscription.Text" xml:space="preserve">
     <value>Описание</value>
@@ -282,14 +327,17 @@
   <data name="&gt;&gt;closeBtn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 375</value>
+  </data>
   <data name="checkBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="tbFreqRange.Size" type="System.Drawing.Size, System.Drawing">
     <value>288, 41</value>
   </data>
-  <data name="&gt;&gt;tbName.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="tbName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 106</value>
   </data>
   <data name="lbFreqPoints.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 19</value>
@@ -304,10 +352,16 @@
     <value>Частотные точки (МГц)</value>
   </data>
   <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>11</value>
+  </data>
+  <data name="tbTo.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 37</value>
+  </data>
+  <data name="&gt;&gt;FillBtn.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
   <data name="tbID.Size" type="System.Drawing.Size, System.Drawing">
     <value>291, 31</value>
@@ -321,8 +375,29 @@
   <data name="tbFreqPoints.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;labelStep.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>DataBase</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;tbStep.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="tbStep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 369</value>
+  </data>
+  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="lbDiscription.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="&gt;&gt;tbName.Name" xml:space="preserve">
     <value>tbName</value>
@@ -330,8 +405,8 @@
   <data name="deleteBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 10pt</value>
   </data>
-  <data name="writeInDbBtn.Text" xml:space="preserve">
-    <value>Запись в БД</value>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="tbDiscription.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt</value>
@@ -345,8 +420,8 @@
   <data name="tbID.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 10pt</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 19</value>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form2</value>
@@ -355,13 +430,13 @@
     <value>339, 106</value>
   </data>
   <data name="&gt;&gt;tbID.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;lbName.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tbName.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;buttonFill.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;writeInDbBtn.Name" xml:space="preserve">
     <value>writeInDbBtn</value>
@@ -381,6 +456,9 @@
   <data name="&gt;&gt;tbFreqPoints.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="tbName.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
@@ -396,6 +474,9 @@
   <data name="lbDiscription.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 19</value>
+  </data>
   <data name="&gt;&gt;clearBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -404,6 +485,12 @@
   </data>
   <data name="addBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;labelStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="changeBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -417,41 +504,59 @@
   <data name="&gt;&gt;tbDiscription.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;buttonFill.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
   <data name="checkBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="changeBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="deleteBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tbFrom.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="lbDiscription.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;tbName.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;FillBtn.Name" xml:space="preserve">
+    <value>FillBtn</value>
+  </data>
+  <data name="deleteBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 164</value>
   </data>
   <data name="&gt;&gt;tbFreqPoints.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="labelTo.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="changeBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;labelTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbDiscription.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tbName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 106</value>
+  <data name="FillBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 365</value>
+  </data>
+  <data name="&gt;&gt;tbStep.Name" xml:space="preserve">
+    <value>tbStep</value>
   </data>
   <data name="deleteBtn.Text" xml:space="preserve">
     <value>Удалить</value>
   </data>
-  <data name="&gt;&gt;tbDiscription.Name" xml:space="preserve">
-    <value>tbDiscription</value>
+  <data name="tbTo.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;buttonFill.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbTo.Name" xml:space="preserve">
+    <value>tbTo</value>
   </data>
   <data name="tbDiscription.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -465,8 +570,8 @@
   <data name="tbFreqPoints.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="deleteBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 164</value>
+  <data name="&gt;&gt;tbName.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="changeBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 10pt</value>
@@ -474,38 +579,50 @@
   <data name="writeInDbBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>522, 106</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="changeBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="writeInDbBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 10pt</value>
   </data>
-  <data name="tbDiscription.Text" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;labelStep.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="clearBtn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
+  <data name="&gt;&gt;labelFrom.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
+    <value>richTextBox2</value>
+  </data>
   <data name="deleteBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;addBtn.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="tbID.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;tbStep.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;tbID.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;writeInDbBtn.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
-  <data name="writeInDbBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="lbName.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
+  <data name="&gt;&gt;lbDiscription.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tbDiscription.Name" xml:space="preserve">
+    <value>tbDiscription</value>
   </data>
   <data name="&gt;&gt;closeBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -513,8 +630,14 @@
   <data name="&gt;&gt;lbFreqPoints.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="tbStep.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;changeBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;deleteBtn.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>19</value>
   </data>
   <data name="lbID.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 47</value>
@@ -522,14 +645,23 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 368</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="addBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;tbFrom.Name" xml:space="preserve">
+    <value>tbFrom</value>
   </data>
-  <data name="tbFreqPoints.Text" xml:space="preserve">
+  <data name="tbDiscription.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addBtn.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="&gt;&gt;addBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -540,11 +672,17 @@
   <data name="&gt;&gt;lbName.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="buttonFill.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
   <data name="&gt;&gt;changeBtn.Name" xml:space="preserve">
     <value>changeBtn</value>
   </data>
   <data name="lbFreqPoints.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tbFreqRange.Name" xml:space="preserve">
+    <value>tbFreqRange</value>
   </data>
   <data name="tbDiscription.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 253</value>
@@ -552,8 +690,8 @@
   <data name="&gt;&gt;tbName.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tbName.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;lbFreqPoints.Name" xml:space="preserve">
     <value>lbFreqPoints</value>
@@ -567,6 +705,9 @@
   <data name="&gt;&gt;writeInDbBtn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;tbStep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;tbFreqPoints.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -579,22 +720,40 @@
   <data name="addBtn.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;tbFreqRange.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="addBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 40</value>
   </data>
-  <data name="closeBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 27</value>
+  <data name="labelTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 375</value>
+  </data>
+  <data name="&gt;&gt;tbFrom.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tbFrom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;changeBtn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="tbID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 59</value>
+  <data name="addBtn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Black, 10pt</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="clearBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;lbDiscription.Parent" xml:space="preserve">
+  <data name="writeInDbBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;buttonFill.Name" xml:space="preserve">
+    <value>buttonFill</value>
+  </data>
+  <data name="&gt;&gt;tbTo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;closeBtn.ZOrder" xml:space="preserve">
@@ -606,11 +765,32 @@
   <data name="lbFreqPoints.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 10pt</value>
   </data>
+  <data name="&gt;&gt;labelTo.Name" xml:space="preserve">
+    <value>labelTo</value>
+  </data>
+  <data name="tbName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 41</value>
+  </data>
+  <data name="lbName.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
   <data name="writeInDbBtn.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
+  <data name="&gt;&gt;labelFrom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 375</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Black, 10pt</value>
+  </data>
+  <data name="tbFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
   </data>
   <data name="changeBtn.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -618,26 +798,41 @@
   <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="labelStep.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
   <data name="lbDiscription.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 19</value>
   </data>
-  <data name="&gt;&gt;tbFreqRange.Name" xml:space="preserve">
-    <value>tbFreqRange</value>
+  <data name="tbTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 368</value>
   </data>
-  <data name="addBtn.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial Black, 10pt</value>
+  <data name="writeInDbBtn.Text" xml:space="preserve">
+    <value>Запись в БД</value>
+  </data>
+  <data name="&gt;&gt;FillBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="checkBtn.Text" xml:space="preserve">
     <value>Узнать</value>
   </data>
+  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
   <data name="&gt;&gt;checkBtn.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;tbID.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lbDiscription.Name" xml:space="preserve">
-    <value>lbDiscription</value>
+  <data name="&gt;&gt;tbTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;deleteBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -646,10 +841,16 @@
     <value>150, 40</value>
   </data>
   <data name="&gt;&gt;lbID.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="addBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tbFreqRange.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="tbFreqPoints.Text" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;tbDiscription.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -667,16 +868,19 @@
     <value>43</value>
   </data>
   <data name="&gt;&gt;lbDiscription.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="tbName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 41</value>
+  <data name="&gt;&gt;labelTo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
+  </data>
+  <data name="&gt;&gt;labelStep.Name" xml:space="preserve">
+    <value>labelStep</value>
   </data>
   <data name="&gt;&gt;lbFreqPoints.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -684,11 +888,17 @@
   <data name="clearBtn.Text" xml:space="preserve">
     <value>Очистить</value>
   </data>
+  <data name="tbID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 59</value>
+  </data>
   <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 185</value>
   </data>
   <data name="checkBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>339, 165</value>
+  </data>
+  <data name="&gt;&gt;tbTo.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

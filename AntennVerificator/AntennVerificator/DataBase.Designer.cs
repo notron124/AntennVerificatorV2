@@ -45,6 +45,13 @@
             this.lbName = new System.Windows.Forms.Label();
             this.tbFreqRange = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tbFrom = new System.Windows.Forms.RichTextBox();
+            this.tbTo = new System.Windows.Forms.RichTextBox();
+            this.labelFrom = new System.Windows.Forms.Label();
+            this.labelTo = new System.Windows.Forms.Label();
+            this.FillBtn = new System.Windows.Forms.Button();
+            this.tbStep = new System.Windows.Forms.RichTextBox();
+            this.labelStep = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // writeInDbBtn
@@ -169,6 +176,55 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             // 
+            // tbFrom
+            // 
+            resources.ApplyResources(this.tbFrom, "tbFrom");
+            this.tbFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
+            this.tbFrom.Name = "tbFrom";
+            this.tbFrom.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbID_KeyPress);
+            // 
+            // tbTo
+            // 
+            resources.ApplyResources(this.tbTo, "tbTo");
+            this.tbTo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
+            this.tbTo.Name = "tbTo";
+            this.tbTo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbID_KeyPress);
+            // 
+            // labelFrom
+            // 
+            resources.ApplyResources(this.labelFrom, "labelFrom");
+            this.labelFrom.ForeColor = System.Drawing.Color.White;
+            this.labelFrom.Name = "labelFrom";
+            // 
+            // labelTo
+            // 
+            resources.ApplyResources(this.labelTo, "labelTo");
+            this.labelTo.ForeColor = System.Drawing.Color.White;
+            this.labelTo.Name = "labelTo";
+            // 
+            // FillBtn
+            // 
+            resources.ApplyResources(this.FillBtn, "FillBtn");
+            this.FillBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(119)))), ((int)(((byte)(134)))));
+            this.FillBtn.FlatAppearance.BorderSize = 0;
+            this.FillBtn.ForeColor = System.Drawing.Color.White;
+            this.FillBtn.Name = "FillBtn";
+            this.FillBtn.UseVisualStyleBackColor = false;
+            this.FillBtn.Click += new System.EventHandler(this.FillBtn_Click);
+            // 
+            // tbStep
+            // 
+            resources.ApplyResources(this.tbStep, "tbStep");
+            this.tbStep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(202)))), ((int)(((byte)(209)))));
+            this.tbStep.Name = "tbStep";
+            this.tbStep.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbID_KeyPress);
+            // 
+            // labelStep
+            // 
+            resources.ApplyResources(this.labelStep, "labelStep");
+            this.labelStep.ForeColor = System.Drawing.Color.White;
+            this.labelStep.Name = "labelStep";
+            // 
             // DataBase
             // 
             resources.ApplyResources(this, "$this");
@@ -178,10 +234,16 @@
             this.Controls.Add(this.tbFreqPoints);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbName);
+            this.Controls.Add(this.labelStep);
+            this.Controls.Add(this.labelTo);
+            this.Controls.Add(this.labelFrom);
             this.Controls.Add(this.lbID);
             this.Controls.Add(this.lbDiscription);
             this.Controls.Add(this.tbFreqRange);
             this.Controls.Add(this.tbName);
+            this.Controls.Add(this.tbStep);
+            this.Controls.Add(this.tbTo);
+            this.Controls.Add(this.tbFrom);
             this.Controls.Add(this.tbID);
             this.Controls.Add(this.tbDiscription);
             this.Controls.Add(this.writeInDbBtn);
@@ -189,6 +251,7 @@
             this.Controls.Add(this.checkBtn);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.changeBtn);
+            this.Controls.Add(this.FillBtn);
             this.Controls.Add(this.addBtn);
             this.KeyPreview = true;
             this.Name = "DataBase";
@@ -215,5 +278,12 @@
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.RichTextBox tbFreqRange;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox tbFrom;
+        private System.Windows.Forms.RichTextBox tbTo;
+        private System.Windows.Forms.Label labelFrom;
+        private System.Windows.Forms.Label labelTo;
+        private System.Windows.Forms.Button FillBtn;
+        private System.Windows.Forms.RichTextBox tbStep;
+        private System.Windows.Forms.Label labelStep;
     }
 }
